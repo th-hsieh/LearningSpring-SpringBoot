@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.oreilly.demo.controllers.HelloRestControllerIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-14T02:39:35" hostname="Hsiehde-MBP" time="0.735">
+  <properties/>
+  <testcase name="greetWithoutName(TestRestTemplate)" classname="com.oreilly.demo.controllers.HelloRestControllerIntegrationTest" time="0.721"/>
+  <testcase name="greetWithName(TestRestTemplate)" classname="com.oreilly.demo.controllers.HelloRestControllerIntegrationTest" time="0.012"/>
+  <system-out><![CDATA[10:39:32.774 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [HelloRestControllerIntegrationTest]: using SpringBootContextLoader
+10:39:32.780 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.oreilly.demo.controllers.HelloRestControllerIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+10:39:32.784 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.oreilly.demo.controllers.HelloRestControllerIntegrationTest]: HelloRestControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:39:32.823 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [HelloRestControllerIntegrationTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+10:39:32.951 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [/Users/hsiehtsaihsuan/Desktop/demo/build/classes/java/main/com/oreilly/demo/DemoApplication.class]
+10:39:32.953 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.oreilly.demo.DemoApplication for test class com.oreilly.demo.controllers.HelloRestControllerIntegrationTest
+10:39:33.089 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+10:39:33.091 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+10:39:33.095 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [HelloRestControllerIntegrationTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+10:39:33.098 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [HelloRestControllerIntegrationTest], class annotated with @DirtiesContext [false] with mode [null]
+10:39:33.121 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener -- Performing dependency injection for test class com.oreilly.demo.controllers.HelloRestControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2023-04-14T10:39:33.468+08:00  INFO 35151 --- [    Test worker] o.d.c.HelloRestControllerIntegrationTest : Starting HelloRestControllerIntegrationTest using Java 17.0.6 with PID 35151 (started by hsiehtsaihsuan in /Users/hsiehtsaihsuan/Desktop/demo)
+2023-04-14T10:39:33.470+08:00  INFO 35151 --- [    Test worker] o.d.c.HelloRestControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2023-04-14T10:39:34.572+08:00  INFO 35151 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-14T10:39:34.585+08:00  INFO 35151 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-14T10:39:34.586+08:00  INFO 35151 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-14T10:39:34.691+08:00  INFO 35151 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-14T10:39:34.694+08:00  INFO 35151 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1195 ms
+2023-04-14T10:39:34.896+08:00  INFO 35151 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-04-14T10:39:35.192+08:00  INFO 35151 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 53406 (http) with context path ''
+2023-04-14T10:39:35.203+08:00  INFO 35151 --- [    Test worker] o.d.c.HelloRestControllerIntegrationTest : Started HelloRestControllerIntegrationTest in 2.042 seconds (process running for 3.491)
+2023-04-14T10:39:35.835+08:00  INFO 35151 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-14T10:39:35.835+08:00  INFO 35151 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-14T10:39:35.836+08:00  INFO 35151 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

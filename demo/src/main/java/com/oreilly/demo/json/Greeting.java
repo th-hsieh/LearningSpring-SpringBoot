@@ -1,0 +1,37 @@
+package com.oreilly.demo.json;
+
+import java.util.Objects;
+
+public class Greeting {
+    private String message;
+
+    public Greeting() {}
+
+    public Greeting(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+    //in Java16+, getter method without get make sense as well
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Greeting)) return false;
+        Greeting gr = (Greeting) o;
+        return Objects.equals(message, gr.message);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(message);
+    }
+
+    @Override
+    public String toString() {
+        return message;
+    }
+}
